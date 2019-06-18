@@ -55,16 +55,16 @@ public class WordAdaptor extends ArrayAdapter<Word> {
         int color = ContextCompat.getColor(getContext(),backgroudColor);
         textContainer.setBackgroundColor(color);
 
-        LinearLayout itemLayout = (LinearLayout) listItemView.findViewById(R.id.item_container);
-        mediaPlayer = MediaPlayer.create(getContext(), currentWord.getAudioResourceId());
-        // Set a click listener on that View
-        itemLayout.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
-            @Override
-            public void onClick(View view) {
-                mediaPlayer.start();
-            }
-        });
+//        LinearLayout itemLayout = (LinearLayout) listItemView.findViewById(R.id.item_container);
+//        mediaPlayer = MediaPlayer.create(getContext(), currentWord.getAudioResourceId());
+//        // Set a click listener on that View
+//        itemLayout.setOnClickListener(new View.OnClickListener() {
+//            // The code in this method will be executed when the numbers View is clicked on.
+//            @Override
+//            public void onClick(View view) {
+//                mediaPlayer.start();
+//            }
+//        });
 
         return listItemView;
     }

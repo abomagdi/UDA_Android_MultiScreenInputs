@@ -21,12 +21,17 @@
     android:background="@color/tan_background"
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
-
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_numbers">
     <TextView
         android:id="@+id/numbers"
         style="@style/CategoryStyle"
-        android:background="@color/category_numbers"
-        android:text="@string/category_numbers" />
+        android:text="@string/category_numbers"
+        android:textColor="@android:color/black"
+        android:background="?android:selectableItemBackground"/>
+    </FrameLayout>
 
     <TextView
         android:id="@+id/family"
